@@ -22,7 +22,8 @@ def main():
                 n = int(input("Enter record number: "))
                 print(functions.customer_record(file, n))
         elif choice == "2":
-            pass
+            with open("data/customers.txt", "r") as file:
+                print(functions.customer_best(file))
         elif choice == "3":
             pass
         elif choice == "4":
