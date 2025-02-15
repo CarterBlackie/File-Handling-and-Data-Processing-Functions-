@@ -5,7 +5,8 @@ def main():
     Menu system to choose between functions.
     -------------------------------------------------------
     """
-    while True:
+    choice = 0
+    while choice != 6:
         print("\nMenu:")
         print("1. Retrieve a specific customer record")
         print("2. Find the customer with the highest balance")
@@ -17,7 +18,9 @@ def main():
         choice = input("Enter your choice: ")
         
         if choice == "1":
-            pass
+            with open("data/customers.txt", "r") as file:
+                n = int(input("Enter record number: "))
+                print(functions.customer_record(file, n))
         elif choice == "2":
             pass
         elif choice == "3":
