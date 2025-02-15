@@ -25,7 +25,8 @@ def main():
             with open("data/customers.txt", "r") as file:
                 print(functions.customer_best(file))
         elif choice == "3":
-            pass
+            with open("data/numbers.txt", "r+") as file:
+                print("Appended max number:", functions.append_max_num(file))
         elif choice == "4":
             pass
         elif choice == "5":
