@@ -28,9 +28,14 @@ def main():
             with open("data/numbers.txt", "r+") as file:
                 print("Appended max number:", functions.append_max_num(file))
         elif choice == "4":
-            pass
+            with open("data/source.txt", "r") as src, open("data/destination.txt", "w") as dest:
+                functions.file_copy(src, dest)
+                print("File copied successfully.")
         elif choice == "5":
-            pass
+            with open("data/source.txt", "r") as src, open("data/destination.txt", "a") as dest:
+                n = int(input("Enter number of lines to copy: "))
+                functions.file_copy_n(src, dest, n)
+                print(f"Copied {n} lines successfully.")
         elif choice == "6":
             break
         else:
