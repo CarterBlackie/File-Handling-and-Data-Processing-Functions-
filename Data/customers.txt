@@ -1,0 +1,5 @@
+1001,John Doe,123 Main St,500.75
+1002,Jane Smith,456 Oak St,1200.50
+1003,Bob Johnson,789 Pine St,950.00
+1004,Alice Brown,321 Maple St,1500.00
+1005,Charlie White,654 Birch St,300.20
